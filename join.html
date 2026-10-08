@@ -1,1 +1,17 @@
-<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>MARS 2040 | Join</title><link rel='stylesheet' href='style.css'></head><body><header><a class='logo' href='index.html'>MARS<span>2040</span></a><nav><a href='index.html'>Invitation</a><a href='mission.html'>The Mission</a><a class='active' href='join.html'>Join Us</a></nav></header><main class='page join-page'><section><p class='eyebrow'>CREW APPLICATION</p><h1 class='page-title'>READY TO<br><span>GO BEYOND?</span></h1><p class='lead'>Tell the mission team a little about yourself. Your application will be added to the simulated crew database.</p><div class='mini-stats'><span><strong>24</strong>CREW SPOTS</span><span><strong>01</strong>MISSION</span><span><strong>∞</strong>POSSIBILITIES</span></div></section><form id='crewForm' class='form-card'><label>Full Name<input id='name' required placeholder='Enter your name'></label><label>Age<input id='age' type='number' min='18' max='80' required placeholder='18–80'></label><label>Preferred Mission Role<select id='role' required><option value=''>Select a role</option><option>AI & Robotics Specialist</option><option>Biomedical Researcher</option><option>Engineer</option><option>Planetary Scientist</option><option>Medical Officer</option></select></label><label>Why do you want to join?<textarea id='reason' rows='4' required placeholder='Tell us in one sentence...'></textarea></label><button class='btn primary full'>SUBMIT APPLICATION →</button><p class='form-message' id='formMessage'></p></form></main><footer>MARS 2040 • CREW APPLICATION SYSTEM</footer><script src='script.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ثبت درخواست | مریخ ۲۰۴۰</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<nav class="nav"><a href="index.html">مریخ ۲۰۴۰</a><div><a href="index.html">خانه</a><a href="mission.html">مأموریت</a><a href="join.html">عضویت</a></div></nav>
+<main class="section page"><span class="eyebrow">فرم عضویت</span><h1>درخواست پیوستن به خدمه</h1>
+<p class="lead">اگر فکر می‌کنی برای این مأموریت مناسب هستی، اطلاعات زیر را وارد کن.</p>
+<form id="joinForm">
+<label>نام و نام خانوادگی<input name="name" placeholder="مثلاً: رومینا ناصری" required></label>
+<label>سن<input type="number" name="age" placeholder="مثلاً: ۲۵" required></label>
+<label>رشته تحصیلی<input name="field" placeholder="مثلاً: مهندسی پزشکی" required></label>
+<label>ایمیل<input type="email" name="email" placeholder="example@email.com" required></label>
+<label>چرا می‌خواهی به مأموریت بپیوندی؟<textarea name="reason" rows="5" placeholder="دلیل خود را کوتاه بنویس..." required></textarea></label>
+<button class="btn" type="submit">ثبت درخواست</button><p id="formMessage" class="message"></p>
+</form></main><footer>© ۲۰۴۰ | پروژه مأموریت مریخ</footer><script src="script.js"></script>
+</body></html>
